@@ -1,0 +1,166 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mySpan {
+  /* 外间距 */
+  /* margin: 5px 0; */
+  /* 内间距 */
+  padding: 5px 10px;
+  /* 字体颜色 */
+  color: #fff;
+  /* 背景颜色 */
+  background-color: #1379c2;
+  /* 圆角处理 */
+  border-radius: 5px;
+  /* 鼠标手样式 */
+  cursor: pointer;
+}
+
+img {
+  display: inline;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  /* border-color: #1379c2; */
+}
+
+p {
+  max-width: 600px;
+  text-align: justify;
+}
+
+header {
+  display: flex;
+  gap: 50px;
+}
+
+ul {
+  /* list-style: none; */
+  /* list-style-type: square; */
+  list-style-image: url("/img/1.svg");
+}
+
+ol {
+  list-style-image: url("/img/1.svg");
+}
+
+li {
+  margin: 10px;
+  padding: 10px;
+}
+
+.background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right bottom, white, #b5f5ec 100%);
+}
+
+table {
+  width: 850px;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  margin: 30px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+th {
+  background-color: #1379c2;
+  color: white;
+  font-weight: bold;
+}
+
+.table-blue {
+  background-color: #e6f7ff;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+thead th {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* 优化整体布局 */
+body {
+  padding: 40px;
+}
+
+p {
+  line-height: 1.6;
+  color: #333;
+  margin: 20px 0;
+}
+
+header {
+  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+li {
+  margin: 15px 0;
+  padding: 15px 20px;
+  background: linear-gradient(to right, #1379c2, #13c2c2);
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 5px 15px rgba(19, 121, 194, 0.3);
+}
+
+
+@media screen and (max-width: 480px) {
+  table {
+    font-size: 12px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  img {
+    width: 150px;
+  }
+}
